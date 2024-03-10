@@ -108,8 +108,8 @@ const Arrival = () => {
                         <img src={bg2} alt="" />
                     </div>
                     <div className="info">
-                        <p>Rare item to buy</p>
-                        <h4>$60</h4>
+                        <p>BW Low Dunks</p>
+                        <h4>$260</h4>
                     </div>
                 </div>
                 <div className="card">
@@ -117,8 +117,8 @@ const Arrival = () => {
                     <img src={bg1} alt="" />
                     </div>
                     <div className="info">
-                        <p>Rare item to buy</p>
-                        <h4>$60</h4>
+                        <p>Green Huarauchees</p>
+                        <h4>$190</h4>
                     </div>
                 </div>
                 <div className="card">
@@ -126,8 +126,8 @@ const Arrival = () => {
                     <img src={bg1} alt="" />
                     </div>
                     <div className="info">
-                        <p>Rare item to buy</p>
-                        <h4>$60</h4>
+                        <p>Green Huarauchees</p>
+                        <h4>$190</h4>
                     </div>
                 </div>
                 <div className="card">
@@ -135,8 +135,8 @@ const Arrival = () => {
                     <img src={bg2} alt="" />
                     </div>
                     <div className="info">
-                        <p>Rare item to buy</p>
-                        <h4>$60</h4>
+                        <p>BW Low Dunks</p>
+                        <h4>$260</h4>
                     </div>
                 </div>
                 <div className="card">
@@ -144,8 +144,8 @@ const Arrival = () => {
                         <img src={bg2} alt="" />
                     </div>
                     <div className="info">
-                        <p>Rare item to buy</p>
-                        <h4>$60</h4>
+                        <p>BW Low Dunks</p>
+                        <h4>$260</h4>
                     </div>
                 </div>
                 <div className="card">
@@ -153,8 +153,8 @@ const Arrival = () => {
                     <img src={bg1} alt="" />
                     </div>
                     <div className="info">
-                        <p>Rare item to buy</p>
-                        <h4>$60</h4>
+                        <p>Green Huarauchees</p>
+                        <h4>$190</h4>
                     </div>
                 </div>
                 <div className="card">
@@ -162,8 +162,8 @@ const Arrival = () => {
                     <img src={bg1} alt="" />
                     </div>
                     <div className="info">
-                        <p>Rare item to buy</p>
-                        <h4>$60</h4>
+                        <p>Green Huarauchees</p>
+                        <h4>$190</h4>
                     </div>
                 </div>
                 <div className="card">
@@ -171,10 +171,11 @@ const Arrival = () => {
                     <img src={bg2} alt="" />
                     </div>
                     <div className="info">
-                        <p>Rare item to buy</p>
-                        <h4>$60</h4>
+                        <p>BW Low Dunks</p>
+                        <h4>$260</h4>
                     </div>
                 </div>
+                
             </div>
         </section>
     )
