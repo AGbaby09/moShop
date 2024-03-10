@@ -1,0 +1,134 @@
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.modal>div{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    animation: slideTop 250ms ease;
+    padding: 0 5%;
+}
+.modal>div .close{
+    position: absolute;
+    z-index: 102;
+    top: 1%;
+    left: 5%;
+    border-radius: 50%;
+    width: 4vh;
+    height: 4vh;
+    font-size: 3vh;
+}
+@keyframes slideTop {
+    from{
+        transform: translateY(20%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+.modal>div .photos{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 60%;
+    padding-top: 2%;
+}
+.modal>div .photos .show{
+    background-color: #eee;
+    border-radius: 10px;
+    width: 100%;
+    height: 80%;
+}
+.modal>div .photos .show .buttons{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid black; */
+    z-index: 101;
+}
+.modal>div .photos .show .buttons button{
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+}
+.modal>div .photos .show .buttons button i{
+    font-size: 3vh;
+}
+.modal>div .photos .toggle{
+    width: 100%;
+    height: 20%;
+    /* background: teal; */
+}
+.modal>div .photos .toggle button{
+    width: 22.5%;
+    height: 80%;
+    border-radius: 10px;
+    border: 2px solid #666;
+}
+.modal>div .details{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 40%;
+}
+.modal>div .details h4{
+    /* border: 1px solid black; */
+    height: 10%;
+    width: 100%;
+    font-size: 2vh;
+}
+.modal>div .details h3{
+    /* border: 1px solid black; */
+    height: 12.5%;
+    width: 100%;
+    font-size: 2.5vh;
+}
+.modal>div .details .p{
+    /* border: 1px solid black; */
+    height: 50%;
+    width: 100%;
+    font-size: 1.7vh;
+    overflow: hidden;
+    /* white-space: nowrap; */
+}
+.modal>div .details .p p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space:; */
+}
+.modal>div .details .other{}
+.modal>div .details .cart{
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 25%;
+}
+.modal>div .details .cart button:nth-child(1){
+    height: 8.5vh;
+    width: 8.5vh;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px #ddd;
+    background-color: #ccc;
+    color: #333;
+}
+.modal>div .details .cart button:nth-child(1) i{
+    font-size: 3.5vh;
+}
+.modal>div .details .cart button:nth-child(2) i{
+    font-size: 3vh;
+}
+.modal>div .details .cart button:nth-child(2){
+    height: 90%;
+    width: 70%;
+    border-radius: 50px;
+    box-shadow: 0 0 5px 1px #ddd;
+    background-color: #333;
+    color: white;
+    font-size: 1.8vh;
+}

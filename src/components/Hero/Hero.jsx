@@ -2,6 +2,8 @@ import './Hero.css'
 import bg from '../../assets/jordan.jpg'
 import bg1 from '../../assets/adidas.jpg'
 import bg2 from '../../assets/sneaker.jpg'
+import { useContext } from 'react'
+import ContextVariales from '../../context/ContextVariables'
 
 const Hero = () => {
 
@@ -95,6 +97,7 @@ const Category = () => {
 }
 
 const Arrival = () => {
+    const {setView} = useContext(ContextVariales)
 
     return (
         <section id="Arrival">
@@ -103,7 +106,7 @@ const Arrival = () => {
                 <button>See all</button>
             </div>
             <div className="mid">
-                <div className="card">
+                <div className="card" onClick={()=>{setView(true)}}>
                     <div className="img">
                         <img src={bg2} alt="" />
                     </div>
@@ -112,7 +115,7 @@ const Arrival = () => {
                         <h4>$260</h4>
                     </div>
                 </div>
-                <div className="card">
+                <div className="card" onClick={()=>{setView(true)}}>
                     <div className="img">
                     <img src={bg1} alt="" />
                     </div>
@@ -121,7 +124,7 @@ const Arrival = () => {
                         <h4>$190</h4>
                     </div>
                 </div>
-                <div className="card">
+                <div className="card" onClick={()=>{setView(true)}}>
                     <div className="img">
                     <img src={bg1} alt="" />
                     </div>
@@ -130,16 +133,7 @@ const Arrival = () => {
                         <h4>$190</h4>
                     </div>
                 </div>
-                <div className="card">
-                    <div className="img">
-                    <img src={bg2} alt="" />
-                    </div>
-                    <div className="info">
-                        <p>BW Low Dunks</p>
-                        <h4>$260</h4>
-                    </div>
-                </div>
-                <div className="card">
+                <div className="card" onClick={()=>{setView(true)}}>
                     <div className="img">
                         <img src={bg2} alt="" />
                     </div>
@@ -148,7 +142,16 @@ const Arrival = () => {
                         <h4>$260</h4>
                     </div>
                 </div>
-                <div className="card">
+                <div className="card" onClick={()=>{setView(true)}}>
+                    <div className="img">
+                        <img src={bg2} alt="" />
+                    </div>
+                    <div className="info">
+                        <p>BW Low Dunks</p>
+                        <h4>$260</h4>
+                    </div>
+                </div>
+                <div className="card" onClick={()=>{setView(true)}}>
                     <div className="img">
                     <img src={bg1} alt="" />
                     </div>
@@ -157,7 +160,7 @@ const Arrival = () => {
                         <h4>$190</h4>
                     </div>
                 </div>
-                <div className="card">
+                <div className="card" onClick={()=>{setView(true)}}>
                     <div className="img">
                     <img src={bg1} alt="" />
                     </div>
@@ -166,9 +169,9 @@ const Arrival = () => {
                         <h4>$190</h4>
                     </div>
                 </div>
-                <div className="card">
+                <div className="card" onClick={()=>{setView(true)}}>
                     <div className="img">
-                    <img src={bg2} alt="" />
+                        <img src={bg2} alt="" />
                     </div>
                     <div className="info">
                         <p>BW Low Dunks</p>
