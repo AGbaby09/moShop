@@ -82,14 +82,41 @@ const Arrival = () => {
                 <button>See all</button>
             </div>
             <div className="mid">
-                <div className="card"></div>
-                <div className="card"></div>
-                <div className="card"></div>
-                <div className="card"></div>
-                <div className="card"></div>
-                <div className="card"></div>
-                <div className="card"></div>
-                <div className="card"></div>
+                <div className="card">
+                    <div className="img"></div>
+                    <div className="info">
+                        <p>Rare item to buy</p>
+                        <h4>$60</h4>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="img"></div>
+                    <div className="info">
+                        <p>Rare item to buy</p>
+                        <h4>$60</h4>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="img"></div>
+                    <div className="info">
+                        <p>Rare item to buy</p>
+                        <h4>$60</h4>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="img"></div>
+                    <div className="info">
+                        <p>Rare item to buy</p>
+                        <h4>$60</h4>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="img"></div>
+                    <div className="info">
+                        <p>Rare item to buy</p>
+                        <h4>$60</h4>
+                    </div>
+                </div>
             </div>
         </section>
     )

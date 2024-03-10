@@ -50,6 +50,10 @@
   border: 3px solid #333;  
 }
 
+a{
+  color: white;
+  text-decoration: none;
+}
 button{
   cursor: pointer;
   outline: none;
