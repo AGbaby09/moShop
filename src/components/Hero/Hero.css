@@ -5,27 +5,27 @@
     padding: 0 5%;
 }
 #Hero .Top{
-    height: 12%;
+    height: 10%;
 }
 #Hero .Top button{
     border:none;
     box-shadow: 0 0 5px 1px #0e0e0e35;
     border-radius: 50%;
-    height: 7vh;
-    width: 7vh;
+    height: 5.5vh;
+    width: 5.5vh;
     background-color: rgba(230, 226, 226, 0.343);
 }
 #Hero .Top button i{
-    font-size: 3.5vh;
+    font-size: 3vh;
 }
 #Hero .Top #logo{
     font-weight: 800;
-    font-size: 2.2vh;
+    font-size: 2vh;
 }
 
 #Hero form{
     /* border: 1px solid red; */
-    height: 8%;
+    height: 7%;
 }
 #Hero form input{
     position: absolute;
@@ -43,6 +43,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 3vh;
+    color: #aaa;
     left: 3.5%;
 }
 
@@ -58,7 +59,7 @@
     margin: auto;
 }
 #Hero #category .top h3{
-    font-size: 2.5vh;
+    font-size: 2.2vh;
 }
 #Hero #category .top button{
     background-color: white;
@@ -96,7 +97,7 @@
     margin: auto;
 }
 #Hero #Arrival .top h3{
-    font-size: 2.5vh;
+    font-size: 2.1vh;
 }
 #Hero #Arrival .top button{
     background-color: white;
@@ -112,7 +113,7 @@
     row-gap: 5%;
 }
 #Hero #Arrival .mid .card{
-    background-color: #aaa;
+    background-color: #aaaaaa47;
     width: 95%;
     height: 25vh;
     margin: 0 2.5%;

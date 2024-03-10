@@ -22,7 +22,7 @@ const Top = () => {
                 <i className="bx bxs-category-alt"></i>
             </button>
             <div id="logo">
-                <p>moSHOP</p>
+                <p>MOSHOP</p>
             </div>
             <button className="center">
                 <i className="bx bxs-bell"></i>
