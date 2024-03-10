@@ -8,11 +8,12 @@
     border-radius: 50px;
     z-index: 50;
     background-color: black;
+    transition: 250ms ease;
 }   
 #Navbar a{
     font-size: 3vh;
     font-family: "Poppins", sans-serif;
 }
 #Navbar a i{
-    
+
 }

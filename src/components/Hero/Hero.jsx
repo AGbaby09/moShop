@@ -1,18 +1,34 @@
 import './Hero.css'
+import bg from '../../assets/jordan.jpg'
+import bg1 from '../../assets/adidas.jpg'
+import bg2 from '../../assets/sneaker.jpg'
 
 const Hero = () => {
 
     return (
         <section id="Hero">
-            <Top />
-            <Search />
-            <Category />
-            <Arrival />
+            <Screen />
+            {/* 
+            <Arrival /> */}
         </section>
     )
 }
 
 export default Hero;
+
+const Screen = () => {
+
+    return(
+        <section id="Screen">
+            <Top />
+            <Search />
+            <div className="rest scrollable">
+                <Category />
+                <Arrival />
+            </div>
+        </section>
+    )
+}
 
 const Top = () => {
 
@@ -35,7 +51,7 @@ const Search = () => {
 
     return (
         <form>
-            <input type="text" placeholder="What are you lokking for?" />
+            <input type="text" placeholder="What are you looking for?" />
             <i className="bx bx-search"></i>
         </form>
     )
@@ -50,24 +66,29 @@ const Category = () => {
                 <button>See all</button>
             </div>
             <div className="mid spBtn">
-                <button>
-                    <i className="bx bx-x"></i>
+                <button className="center">
+                    {/* <i className="bx bx-x"></i> */}
+                    <img src="https://img.icons8.com/ios-filled/50/nike.png" alt="nike"/>
                 </button>
                 <button>
-                    <i className="bx bx-x"></i>
+                    {/* <i className="bx bx-x"></i> */}
+                    <img src="https://img.icons8.com/ios-filled/50/adidas-trefoil.png" alt="adidas-trefoil"/>
                 </button>
                 <button>
-                    <i className="bx bx-x"></i>
+                    {/* <i className="bx bx-x"></i> */}
+                    <img src="https://img.icons8.com/ios-filled/50/air-jordan.png" alt="air-jordan"/>
                 </button>
                 <button>
-                    <i className="bx bx-x"></i>
+                    {/* <i className="bx bx-x"></i> */}
+                    <img src="https://img.icons8.com/ios-filled/50/army-star.png" alt="army-star"/>
                 </button>
                 <button>
-                    <i className="bx bx-x"></i>
+                    {/* <i className="bx bx-x"></i> */}
+                    <img src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/48/external-puma-a-german-multinational-company-designs-and-manufactures-athletic-and-casual-footwear-apparel-and-accessories-fashion-bold-tal-revivo.png" alt="external-puma-a-german-multinational-company-designs-and-manufactures-athletic-and-casual-footwear-apparel-and-accessories-fashion-bold-tal-revivo"/>
                 </button>
             </div>
             <div className="bottom">
-
+                <img src={bg} alt="" />
             </div>
         </div>
     )
@@ -83,35 +104,72 @@ const Arrival = () => {
             </div>
             <div className="mid">
                 <div className="card">
-                    <div className="img"></div>
+                    <div className="img">
+                        <img src={bg2} alt="" />
+                    </div>
                     <div className="info">
                         <p>Rare item to buy</p>
                         <h4>$60</h4>
                     </div>
                 </div>
                 <div className="card">
-                    <div className="img"></div>
+                    <div className="img">
+                    <img src={bg1} alt="" />
+                    </div>
                     <div className="info">
                         <p>Rare item to buy</p>
                         <h4>$60</h4>
                     </div>
                 </div>
                 <div className="card">
-                    <div className="img"></div>
+                    <div className="img">
+                    <img src={bg1} alt="" />
+                    </div>
                     <div className="info">
                         <p>Rare item to buy</p>
                         <h4>$60</h4>
                     </div>
                 </div>
                 <div className="card">
-                    <div className="img"></div>
+                    <div className="img">
+                    <img src={bg2} alt="" />
+                    </div>
                     <div className="info">
                         <p>Rare item to buy</p>
                         <h4>$60</h4>
                     </div>
                 </div>
                 <div className="card">
-                    <div className="img"></div>
+                    <div className="img">
+                        <img src={bg2} alt="" />
+                    </div>
+                    <div className="info">
+                        <p>Rare item to buy</p>
+                        <h4>$60</h4>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="img">
+                    <img src={bg1} alt="" />
+                    </div>
+                    <div className="info">
+                        <p>Rare item to buy</p>
+                        <h4>$60</h4>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="img">
+                    <img src={bg1} alt="" />
+                    </div>
+                    <div className="info">
+                        <p>Rare item to buy</p>
+                        <h4>$60</h4>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="img">
+                    <img src={bg2} alt="" />
+                    </div>
                     <div className="info">
                         <p>Rare item to buy</p>
                         <h4>$60</h4>
