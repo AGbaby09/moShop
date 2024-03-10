@@ -22,7 +22,7 @@ const Screen = () => {
         <section id="Screen">
             <Top />
             <Search />
-            <div className="rest scrollable">
+            <div className="rest trans scrollable">
                 <Category />
                 <Arrival />
             </div>

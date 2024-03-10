@@ -41,6 +41,12 @@
   border-radius: 10px;    
   padding-right: 0 2vw;  
 }
+.trans.scrollable::-webkit-scrollbar {
+  width: 0vw;               
+  height: 10vh;               
+  border-radius: 10px;    
+  padding-right: 0 2vw;  
+}
 .scrollable::-webkit-scrollbar-track {
   background: transparent;        
 }
@@ -48,6 +54,11 @@
   background-color: #333;    
   border-radius: 20px;      
   border: 3px solid #333;  
+}
+.trans.scrollable::-webkit-scrollbar-thumb {
+  background-color: transparent;    
+  border-radius: 20px;      
+  border: 3px solid transparent;  
 }
 
 a{
