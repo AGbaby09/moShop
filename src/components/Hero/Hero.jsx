@@ -102,12 +102,16 @@ const Arrival = () => {
     const data = [
         {img: bg2, name: 'BW Low Dunks', price: 240},
         {img: bg1, name: 'Green Huarache', price: 180},
-        {img: bg1, name: 'Green Huarache', price: 180},
+        {img: bg, name: 'Airforce 1', price: 360},
         {img: bg2, name: 'BW Low Dunks', price: 240},
+        {img: bg1, name: 'Green Huarache', price: 180},
+        {img: bg, name: 'Airforce 1', price: 360},
         {img: bg2, name: 'BW Low Dunks', price: 240},
         {img: bg1, name: 'Green Huarache', price: 180},
-        {img: bg1, name: 'Green Huarache', price: 180},
+        {img: bg, name: 'Airforce 1', price: 360},
         {img: bg2, name: 'BW Low Dunks', price: 240},
+        {img: bg1, name: 'Green Huarache', price: 180},
+        {img: bg, name: 'Airforce 1', price: 360},
     ]
 
     const container = {
