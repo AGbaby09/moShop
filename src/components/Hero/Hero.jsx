@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import './Hero.css'
 import bg from '../../assets/jordan.jpg'
 import bg1 from '../../assets/adidas.jpg'
@@ -98,6 +99,36 @@ const Category = () => {
 
 const Arrival = () => {
     const {setView} = useContext(ContextVariales)
+    const data = [
+        {img: bg2, name: 'BW Low Dunks', price: 240},
+        {img: bg1, name: 'Green Huarache', price: 180},
+        {img: bg1, name: 'Green Huarache', price: 180},
+        {img: bg2, name: 'BW Low Dunks', price: 240},
+        {img: bg2, name: 'BW Low Dunks', price: 240},
+        {img: bg1, name: 'Green Huarache', price: 180},
+        {img: bg1, name: 'Green Huarache', price: 180},
+        {img: bg2, name: 'BW Low Dunks', price: 240},
+    ]
+
+    const container = {
+        hidden: { opacity: 0, scale: 0 },
+        visible: {
+            opacity: 1,
+            scale: 1,
+            transition: {
+            delayChildren: 0.6,
+            staggerChildren: 0.5
+            }
+        }
+    };
+      
+    const item = {
+        hidden: { y: 10, opacity: 0 },
+        visible: {
+            y: 0,
+            opacity: 1
+        }
+    };
 
     return (
         <section id="Arrival">
@@ -105,81 +136,39 @@ const Arrival = () => {
                 <h3>New Arrival</h3>
                 <button>See all</button>
             </div>
-            <div className="mid">
-                <div className="card" onClick={()=>{setView(true)}}>
+            <motion.ul className="mid" variants={container} initial="hidden" animate="visible">
+                {
+                    data && data.map((itemm, index) => (
+                        <motion.li key={index} variants={item} className="card" onClick={()=>{setView(true)}}>
+                            <div className="img">
+                                <img src={itemm.img} alt={itemm.img} />
+                            </div>
+                            <div className="info">
+                                <p>{itemm.name}</p>
+                                <h4>{itemm.price}</h4>
+                            </div>
+                        </motion.li>
+                    ))
+                }
+                <motion.li key={""} variants={item} className="card" onClick={()=>{setView(true)}}>
                     <div className="img">
-                        <img src={bg2} alt="" />
+                        {/* <img src={""} alt={""} /> */}
                     </div>
                     <div className="info">
-                        <p>BW Low Dunks</p>
-                        <h4>$260</h4>
+                        <p>{""}</p>
+                        <h4>{""}</h4>
                     </div>
-                </div>
-                <div className="card" onClick={()=>{setView(true)}}>
+                </motion.li>
+                <motion.li key={""} variants={item} className="card" onClick={()=>{setView(true)}}>
                     <div className="img">
-                    <img src={bg1} alt="" />
+                        {/* <img src={""} alt={""} /> */}
                     </div>
                     <div className="info">
-                        <p>Green Huarauchees</p>
-                        <h4>$190</h4>
+                        <p>{""}</p>
+                        <h4>{""}</h4>
                     </div>
-                </div>
-                <div className="card" onClick={()=>{setView(true)}}>
-                    <div className="img">
-                    <img src={bg1} alt="" />
-                    </div>
-                    <div className="info">
-                        <p>Green Huarauchees</p>
-                        <h4>$190</h4>
-                    </div>
-                </div>
-                <div className="card" onClick={()=>{setView(true)}}>
-                    <div className="img">
-                        <img src={bg2} alt="" />
-                    </div>
-                    <div className="info">
-                        <p>BW Low Dunks</p>
-                        <h4>$260</h4>
-                    </div>
-                </div>
-                <div className="card" onClick={()=>{setView(true)}}>
-                    <div className="img">
-                        <img src={bg2} alt="" />
-                    </div>
-                    <div className="info">
-                        <p>BW Low Dunks</p>
-                        <h4>$260</h4>
-                    </div>
-                </div>
-                <div className="card" onClick={()=>{setView(true)}}>
-                    <div className="img">
-                    <img src={bg1} alt="" />
-                    </div>
-                    <div className="info">
-                        <p>Green Huarauchees</p>
-                        <h4>$190</h4>
-                    </div>
-                </div>
-                <div className="card" onClick={()=>{setView(true)}}>
-                    <div className="img">
-                    <img src={bg1} alt="" />
-                    </div>
-                    <div className="info">
-                        <p>Green Huarauchees</p>
-                        <h4>$190</h4>
-                    </div>
-                </div>
-                <div className="card" onClick={()=>{setView(true)}}>
-                    <div className="img">
-                        <img src={bg2} alt="" />
-                    </div>
-                    <div className="info">
-                        <p>BW Low Dunks</p>
-                        <h4>$260</h4>
-                    </div>
-                </div>
-                
-            </div>
+                </motion.li>
+            </motion.ul>
         </section>
     )
 }
